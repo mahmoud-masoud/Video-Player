@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Video Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <video controls>
+        <source src="morning.mp4" type="video/mp4" />
+      </video>
+      <button class="hidden__play__pause"><i class="fa-solid fa-play"></i></button>
+
+      <div class="wrapper">
+        <div class="info">
+          <div class="controls">
+            <button class="play__pause">
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <button class="stop">
+              <i class="fa-solid fa-stop"></i>
+            </button>
+          </div>
+          <div class="current__time">
+            <span>00:00</span>
+          </div>
+          
+          <input type="range" class="time__line" value='0' min='0' max=''>
+          
+          <div class="max__time">
+            <span>00:00</span>
+          </div>
+        </div>
+      </div>
+    <!-- <div class="custom-range"></div> -->
+  </body>
+</html>

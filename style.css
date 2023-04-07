@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #003b6f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to top left, #004e92, #000428);
+}
+
+.container {
+  max-width: 800px;
+  padding: 12px;
+  position: relative;
+}
+
+video {
+  width: 100%;
+  display: block;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+.wrapper {
+  background-color: #b9f2ff;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 8px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.time__line {
+  border-radius: 1000px;
+  height: 5px;
+  flex: 1;
+  appearance: none;
+  background-color: #002251;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.time__line::-webkit-slider-thumb {
+  appearance: none;
+  height: 20px;
+  width: 10px;
+  background-color: #00d5ff;
+  border-radius: 4px;
+}
+
+.current__time,
+.max__time {
+  color: #002251;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+.controls button {
+  background-color: transparent;
+  border: none;
+  width: 25px;
+}
+
+.controls i {
+  font-size: 26px;
+}
+
+.controls .play__pause {
+  color: #00cc6d;
+}
+
+.controls .stop {
+  color: #c23400;
+}
+
+.hidden__play__pause {
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  opacity: 0;
+  color: #fff;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+}
+
+.animation {
+  animation: show 0.9s ease;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    scale: 1.1;
+  }
+
+  100% {
+    opacity: 0;
+    scale: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .hidden__play__pause {
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+  }
+}

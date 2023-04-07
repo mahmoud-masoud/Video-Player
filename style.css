@@ -81,11 +81,13 @@ video {
 }
 
 .controls .play__pause {
-  color: #00cc6d;
+  /* color: #00cc6d; */
+  color: #00c3ff;
 }
 
 .controls .stop {
-  color: #c23400;
+  /* color: #c23400; */
+  color: #002251;
 }
 
 .hidden__play__pause {

@@ -5,7 +5,7 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #003b6f;
   display: flex;
   justify-content: center;
@@ -37,7 +37,7 @@ video {
 .info {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .time__line {
@@ -57,6 +57,7 @@ video {
   width: 10px;
   background-color: #00d5ff;
   border-radius: 4px;
+  border: 1.5px solid #002251;
 }
 
 .current__time,
@@ -88,7 +89,7 @@ video {
 }
 
 .hidden__play__pause {
-  font-size: 50px;
+  font-size: 40px;
   position: absolute;
   top: 50%;
   right: 50%;
@@ -97,8 +98,8 @@ video {
   color: #fff;
   pointer-events: none;
   background-color: rgba(0, 0, 0, 0.5);
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,7 +108,7 @@ video {
 }
 
 .animation {
-  animation: show 0.9s ease;
+  animation: show 0.7s ease-in;
 }
 
 @keyframes show {
@@ -117,12 +118,11 @@ video {
 
   50% {
     opacity: 1;
-    scale: 1.1;
   }
 
   100% {
     opacity: 0;
-    scale: 1;
+    scale: 1.2;
   }
 }
 
